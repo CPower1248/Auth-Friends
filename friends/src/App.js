@@ -11,9 +11,11 @@ function App() {
     <Router>
       <div className="App">
         <h1>-Friends-</h1>
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/protected">Protected Page</Link>
+        <div className="navbar">
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/protected">Friends List(PP)</Link>
+        </div>
         <Switch>
           <Route path="/login" component={Login} />
           <PrivateRoute exact path="/protected" component={FriendsList} />
